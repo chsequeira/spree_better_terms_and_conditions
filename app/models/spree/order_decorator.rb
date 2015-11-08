@@ -3,7 +3,7 @@ Spree::Order.class_eval do
   # attr_accessible :terms_and_conditions # uncomment for Spree below version 2.1
 
   # Add new checkout step to checkout process
-  insert_checkout_step :terms_and_conditions, :before => :delivery
+  # insert_checkout_step :terms_and_conditions, :before => :delivery
 
   def valid_terms_and_conditions?
     unless terms_and_conditions == true

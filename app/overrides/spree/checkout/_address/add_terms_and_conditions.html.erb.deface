@@ -1,0 +1,2 @@
+<!-- insert_top '[data-hook="buttons"]' -->
+<%= render partial: 'spree/checkout/terms_and_conditions_embed' %>
