@@ -18,4 +18,4 @@ end
 Spree::Order.state_machine.before_transition :to => :delivery, :do => :valid_terms_and_conditions?
 
 # Add terms_and_conditions to strong parameters
-Spree::PermittedAttributes.checkout_attributes << :terms_and_conditions # Remove if Spree is below version 2.1
+Spree::PermittedAttributes.checkout_attributes << :terms_and_conditions unless Spree::PermittedAttributes.checkout_attributes.include?(:terms_and_conditions)

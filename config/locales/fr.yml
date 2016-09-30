@@ -1,0 +1,12 @@
+fr:
+  activerecord:
+    attributes:
+      spree/order:
+        terms_and_conditions: 'Conditions'
+  spree:
+    terms_and_conditions:
+      title: 'Conditions'
+      checkbox: 'J`accepte les conditions'
+      must_be_accepted: 'doivent êtres acceptés!'
+    order_state:
+      terms_and_conditions: 'Conditions'
